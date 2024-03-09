@@ -6,24 +6,27 @@
     <title>aula</title>
 </head>
 <body>
-    <?php 
+    <?php
 	if(isset($_GET['operacao']) && isset($_GET['x']) && isset($_GET['y'])){
 
 		if($_GET['operacao'] == "adicao"){
-			echo $_GET['x'] + $_GET['y']
+			echo $_GET['x'] + $_GET['y'];
 		}
 		else if($_GET['operacao'] == "subtracao"){	
-			echo $_GET['x'] - $_GET['y']
+			echo $_GET['x'] - $_GET['y'];
 		}
 		else if($_GET['operacao'] == "multiplicacao"){
-			echo $_GET['x'] * $_GET['y']
+			echo $_GET['x'] * $_GET['y'];
 		}
 		else if($_GET['operacao'] == "divisao"){
-			echo $_GET['x'] / $_GET['y']
+			echo $_GET['x'] / $_GET['y'];
 		}
 		else{
-			echo "Nenhuma operação selecionada."
+			echo "Operação selecionada incorretamente.";
 		}
+	}
+	else{
+		echo "Nada selecionado.";
 	}
     ?>
 </body>
